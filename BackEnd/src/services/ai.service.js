@@ -82,8 +82,6 @@ const model = genAI.getGenerativeModel({
 
 async function generateContent(prompt) {
 
-    console.log("GOOGLE_GEMINI_KEY in service:", process.env.GOOGLE_GEMINI_KEY?.slice(0, 8));
-
     const result = await model.generateContent(prompt);
 
     console.log(result.response.text())

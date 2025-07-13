@@ -13,6 +13,7 @@ const aiService = require("../services/ai.service");
 // };
 
 module.exports.getReview = async (req, res) => {
+  console.log("GOOGLE_GEMINI_KEY in service:", process.env.GOOGLE_GEMINI_KEY?.slice(0, 8));
   const { code } = req.body;
   if (!code) return res.status(400).json({ error: "Code is required" });
 

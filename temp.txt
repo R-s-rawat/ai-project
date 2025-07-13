@@ -9,3 +9,6 @@ so, crash happening inside getReview() when it talks to Gemini, because the key 
 
 Error ❌
 is in api call, (The Google Gemini API receives the request, but rejects the API key)
+
+Place (    console.log("GOOGLE_GEMINI_KEY in service:", process.env.GOOGLE_GEMINI_KEY?.slice(0, 8));) from ai.service.js to ai.controller.js ( the ai.service.js) not console logging..
+
