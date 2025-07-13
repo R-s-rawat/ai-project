@@ -7,3 +7,5 @@ Backend route (or api endpoint is getting triggered), but it fails to parse the 
 checking in postman, routing/json parsing(OK)
 so, crash happening inside getReview() when it talks to Gemini, because the key the SDK sees is undefined/wrong..
 
+Error ❌
+is in api call, (The Google Gemini API receives the request, but rejects the API key)
