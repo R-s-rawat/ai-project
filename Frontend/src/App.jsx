@@ -23,7 +23,7 @@ function App() {
   async function reviewCode() {
     console.log("BASE URL:", import.meta.env.VITE_BASE_URL); // invoke on Review button click
     const response = await axios.post(`${import.meta.env.VITE_BASE_URL}/ai/get-review`, { code })
-    setReview(response.data)
+    setReview(response.data.review)
   }
 
   return (
