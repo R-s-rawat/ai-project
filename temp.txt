@@ -4,3 +4,6 @@ code : " function sum() {\n  return 1 + 1\n}"
 During testing: 
 Backend route (or api endpoint is getting triggered), but it fails to parse the incoming request body -> 400(bad request)
 
+checking in postman, routing/json parsing(OK)
+so, crash happening inside getReview() when it talks to Gemini, because the key the SDK sees is undefined/wrong..
+
